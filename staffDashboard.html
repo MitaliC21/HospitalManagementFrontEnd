@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="staffDashboard.css">
+    <title>Staff</title>
+    <link rel="shortcut icon" href="emojione-v1_hospital.svg" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pe-lg-5">
+    <div class="container-fluid pe-5 me-5">
+      <a class="navbar-brand pl-5 ms-5" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      <div class="collapse navbar-collapse pl-5" id="navbarNavAltMarkup">
+         
+        <div class="navbar-nav">
+          <a class="nav-link" href="#" style="color: black;"> <img src="subway_admin.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""> Staff</a>
+          <a class="nav-link" href="/home.html" style="color: black;"> <img src="ant-design_logout-outlined.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""></a>
+        </div>
+    </div>
+  
+    </div>
+  </nav>
+
+      <section style="height: 60vh;">
+        <h1 class="text-center mt-5">Patient Details</h1>
+        <div class="table staffTable">
+            <div class="p-5">
+                
+                <table table-responsive class="table caption-top pl-5 pe-5">
+                  <caption>Details</caption>
+                 <button class="btn btn-primary d-flex justify-content-end addPatient">Add Patients</button>
+                 <div class="card addPatientCard">
+                  <div class="card-body">
+                   <form>
+                       <div class="mb-3">
+                         <label for="exampleInputEmail1" class="form-label">Name</label>
+                         <input type="text" class="form-control patientName" name="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                       </div>
+                       <div class="mb-3">
+                         <label for="exampleInputPassword1" class="form-label">Contact No</label>
+                         <input type="text" name="contact" class="form-control patientContact" id="exampleInputPassword1">
+                       </div>
+                       <div class="mb-3">
+                           <label for="exampleInputPassword1" class="form-label">Disease</label>
+                           <input type="text" name="email" class="form-control patientDisease" id="exampleInputPassword1">
+                         </div>
+                       <button type="submit" class="btn btn-primary addPatientButton">Add</button>
+                     </form>
+                  </div>
+               </div>
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Contact No</th>
+                    <th scope="col">Disease</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tom</td>
+                    <td>95764876</td>
+                    <td>Cough</td>
+                  </tr>
+                  <tr>
+                    <td>Jack</td>
+                    <td>92546321</td>
+                    <td>Fever</td>
+                  </tr>
+                  <tr>
+                    <td>Lam</td>
+                    <td>9524622</td>
+                    <td>Cold</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+      </section>
+
+
+      
+      
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(187, 182, 246,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(170, 164, 244,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(154, 145, 242,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#837aef" />
+            </g>
+        </svg>
+    </div>
+    <footer class="page-footer font-small unique-color-dark pt-5">
+      <div class="container d-flex footer-container">
+        <div class="container d-flex justify-content-around">
+            <div class="">
+               <p style="color: black;">  Get in touch</p>
+               <span><img src="logos_google-gmail.svg" style="height: 15px; width: 15px;" alt=""> hospitalmail@gmail.com</span><br>
+               <span><img src="Group (1).svg" alt="" style="height: 15px; width: 15px;" > +91 9635245211</span><br>
+               <span><img src="Vector (1).svg" style="height: 15px; width: 15px;" alt=""> Address: Pune 33 </span><br>
+           </div>
+       </div>
+       <div class="container d-flex justify-content-around">
+           <div class="">
+              <p style="color: black;">  Navigation Link</p>
+              <a href="" style="color: black;">Admin</a><br>
+              <a href="" style="color: black;">Doctor</a><br>
+              <a href="" style="color: black;">Staff</a>
+          </div>
+      </div>
+      <div class="container d-flex justify-content-around">
+        <div class="">
+           <p style="color: black;">Follow Us </p>
+          <Span> <img src="ph_linkedin-logo-light.svg" alt="" style="height: 25px; width: 25px;"> <img src="foundation_social-twitter.svg" style="height: 25px; width: 25px;" alt=""> <img src="jam_facebook-square.svg" style="height: 25px; width: 25px;" alt=""></Span>
+       </div>
+   </div>
+      </div>
+    
+    <div class="footer-copyright text-center py-3" style="background-color: #7C71F4;"><h7>© 2020 Copyright:</h7>
+    </div>
+  </footer>
+      <script src="staffDashboard.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

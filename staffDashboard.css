@@ -1,0 +1,73 @@
+.navbar{
+    padding: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: -7px 7px 14px rgba(117, 117, 117, 0.2), 7px -7px 14px rgba(117, 117, 117, 0.2), -7px -7px 14px rgba(255, 255, 255, 0.9), 7px 7px 18px rgba(117, 117, 117, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(117, 117, 117, 0.5);
+    background-image: linear-gradient(to right bottom, #837aef, #948bec, #a59ce9, #b4aee5, #c3bfe1);
+}
+.navbar-brand{
+    padding-left: 20px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 400px;
+  }
+  /* Animation */
+  .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+    .content {
+      height: 30vh;
+    }
+  }
+  
+  /*Other*/
+  
+  .unique-color-dark {
+    background-color: #837aef!important;
+  }
+  
+.footer-container{
+    flex-direction: row;
+}

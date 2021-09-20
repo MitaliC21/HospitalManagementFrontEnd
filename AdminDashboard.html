@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="AdminDashboard.css">
+    <title>Admin</title>
+    <link rel="shortcut icon" href="emojione-v1_hospital.svg" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pe-lg-5">
+    <div class="container-fluid pe-5 me-5">
+      <a class="navbar-brand pl-5 ms-5" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      <div class="collapse navbar-collapse pl-5" id="navbarNavAltMarkup">
+         
+        <div class="navbar-nav">
+          <a class="nav-link" href="#" style="color: black;"> <img src="subway_admin.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""> Admin</a>
+          <a class="nav-link" href="/home.html" style="color: black;"> <img src="ant-design_logout-outlined.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""></a>
+        </div>
+    </div>
+  
+    </div>
+  </nav>
+
+<Section style="height: 100vh;">
+  <div class="h1 mt-5 text-center">Administration Dashboard</div>
+      <div class="container d-flex justify-content-around mt-5 pt-5 bodyCard">
+       <div class="d-flex justify-content-between">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title mt-3"> <img src="subway_admin.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""> Admin</a></h5>
+              <hr>
+              <a href="#" class="btn btn-primary editAdmin">Edit</a>
+            </div>
+          </div>
+       </div>
+
+       <div class="d-flex justify-content-between">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title mt-3"> <img src="subway_admin.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""> Doctors</h5>
+              <hr>
+              <a href="#" class="btn btn-primary editDoctor">Edit</a>
+            </div>
+          </div>
+       </div>
+
+       <div class="d-flex justify-content-between">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title mt-3"> <img src="subway_admin.svg" width="30" height="24" class="d-inline-block align-text-top" alt=""> Staff</h5>
+              <hr>
+              <a href="#" class="btn btn-primary editStaff">Edit</a>
+            </div>
+          </div>
+       </div>
+
+      </div>
+      
+<div class="table adminTable">
+<div class="p-5">
+    <table table-responsive class="table caption-top pl-5 pe-5">
+    <caption>List of Admins  <button class="btn bn-primary d-flex justify-content-end addAdmin">Add Admins</button>
+        <div class="card addAdminCard">
+            <div class="card-body">
+             <form>
+                 <div class="mb-3">
+                   <label for="exampleInputEmail1" class="form-label">Name</label>
+                   <input type="text" class="form-control adminName" name="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                 <div class="mb-3">
+                   <label for="exampleInputPassword1" class="form-label">Contact No</label>
+                   <input type="text" name="contact" class="form-control adminContact" id="exampleInputPassword1">
+                 </div>
+                 <div class="mb-3">
+                     <label for="exampleInputPassword1" class="form-label">Email</label>
+                     <input type="email" name="email" class="form-control adminEmail" id="exampleInputPassword1">
+                   </div>
+                 <button type="submit" class="btn btn-primary addAdminButton">Add</button>
+               </form>
+            </div>
+         </div>
+    </caption>
+
+   <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Contact Numner</th>
+        <th scope="col">Email</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td><button class="btn btn-primary edit">Update</button>
+            <form class="card hide">
+                <label for="firstName">firstName</label>
+                <input type="text" name="firstName" class="fname" />
+                <label for="lastName">LastName</label>
+                <input type="text" name="lastName" class="lname" />
+                <label for="email">Email</label>
+                <input type="email" name="email" class="email" />
+                <button class="btn btn-primary" id="adminSubmit">Add</button>
+              </form></td>
+            <td><button class="btn btn-danger deleteAdmin">Delete</button></td> 
+      </tr>
+      <tr>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td><button class="btn btn-primary edit">Update</button>
+            <form class="card hide">
+                <label for="firstName">firstName</label>
+                <input type="text" name="firstName" class="fname" />
+                <label for="lastName">LastName</label>
+                <input type="text" name="lastName" class="lname" />
+                <label for="email">Email</label>
+                <input type="email" name="email" class="email" />
+                <button class="btn btn-primary" id="adminSubmit">Add</button>
+              </form></td>
+        <td><button class="btn btn-danger deleteAdmin">Delete</button></td> 
+      </tr>
+      <tr>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td><button class="btn btn-primary edit">Update</button>
+            <form class="card hide">
+                <label for="firstName">firstName</label>
+                <input type="text" name="firstName" class="fname" />
+                <label for="lastName">LastName</label>
+                <input type="text" name="lastName" class="lname" />
+                <label for="email">Email</label>
+                <input type="email" name="email" class="email" />
+                <button class="btn btn-primary" id="adminSubmit">Add</button>
+              </form>
+           </td>
+        <td><button class="btn btn-danger deleteAdmin">Delete</button></td> 
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="table doctorTable">
+    <div class="p-5">
+        <table table-responsive class="table caption-top pl-5 pe-5">
+        <caption>List of Doctors  <button class="btn bn-primary d-flex justify-content-end addDoctor">Add Members</button>
+            <div class="card addDoctorCard">
+                <div class="card-body">
+                 <form>
+                     <div class="mb-3">
+                       <label for="exampleInputEmail1" class="form-label">Name</label>
+                       <input type="text" class="form-control doctorName" name="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     </div>
+                     <div class="mb-3">
+                       <label for="exampleInputPassword1" class="form-label">Contact No</label>
+                       <input type="text" name="contact" class="form-control doctorContact" id="exampleInputPassword1">
+                     </div>
+                     <div class="mb-3">
+                         <label for="exampleInputPassword1" class="form-label">Email</label>
+                         <input type="email" name="email" class="form-control doctorEmail" id="exampleInputPassword1">
+                       </div>
+                     <button type="submit" class="btn btn-primary addDoctorButton">Add</button>
+                   </form>
+                </div>
+             </div>
+            </caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Contact Numner</th>
+            <th scope="col">Email</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody class="dbody">
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td><button class="btn btn-primary edit">Update</button>
+            <form class="card hide">
+                  <label for="firstName">firstName</label>
+                  <input type="text" name="firstName" class="fname" />
+                  <label for="lastName">LastName</label>
+                  <input type="text" name="lastName" class="lname" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <button class="btn btn-primary" id="adminSubmit">Add</button>
+                </form></td>
+            <td><button class="btn btn-danger deleteDoctor">Delete</button></td> 
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td><button class="btn btn-primary edit ">Update</button>
+            <form class="card hide">
+                  <label for="firstName">firstName</label>
+                  <input type="text" name="firstName" class="fname" />
+                  <label for="lastName">LastName</label>
+                  <input type="text" name="lastName" class="lname" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <button class="btn btn-primary" id="adminSubmit">Add</button>
+                </form></td>
+            <td><button class="btn btn-danger deleteDoctor">Delete</button></td> 
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td><button class="btn btn-primary edit">Update</button>
+            <form class="card hide">
+                  <label for="firstName">firstName</label>
+                  <input type="text" name="firstName" class="fname" />
+                  <label for="lastName">LastName</label>
+                  <input type="text" name="lastName" class="lname" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <button class="btn btn-primary" id="adminSubmit">Add</button>
+                </form></td>
+            <td><button class="btn btn-danger deleteDoctor">Delete</button></td> 
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="table staffTable">
+        <div class="p-5">
+            <table table-responsive class="table caption-top pl-5 pe-5">
+            <caption>List of Staff Members  <button class="btn bn-primary d-flex justify-content-end addStaff">Add Members</button>
+              <div class="card addStaffCard">
+                <div class="card-body">
+                 <form>
+                     <div class="mb-3">
+                       <label for="exampleInputEmail1" class="form-label">Name</label>
+                       <input type="text" class="form-control staffName" name="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     </div>
+                     <div class="mb-3">
+                       <label for="exampleInputPassword1" class="form-label">Contact No</label>
+                       <input type="text" name="contact" class="form-control staffContact" id="exampleInputPassword1">
+                     </div>
+                     <div class="mb-3">
+                         <label for="exampleInputPassword1" class="form-label">Email</label>
+                         <input type="email" name="email" class="form-control staffEmail" id="exampleInputPassword1">
+                       </div>
+                     <button type="submit" class="btn btn-primary addStaffButton">Add</button>
+                   </form>
+                </div>
+             </div>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Contact Numner</th>
+                <th scope="col">Email</th>
+                <th scope="col">Edit</th>
+              </tr>
+            </thead>
+            <tbody class="sbody">
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                 <td><button class="btn btn-primary edit">Update</button>
+                <form class="card hide">
+                  <label for="firstName">firstName</label>
+                  <input type="text" name="firstName" class="fname" />
+                  <label for="lastName">LastName</label>
+                  <input type="text" name="lastName" class="lname" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <button class="btn btn-primary" id="adminSubmit">Add</button>
+                </form></td>
+            <td><button class="btn btn-danger deleteStaff">Delete</button></td> 
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                 <td><button class="btn btn-primary edit">Update</button>
+                <form class="card hide">
+                  <label for="firstName">firstName</label>
+                  <input type="text" name="firstName" class="fname" />
+                  <label for="lastName">LastName</label>
+                  <input type="text" name="lastName" class="lname" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <button class="btn btn-primary" id="adminSubmit">Add</button>
+                </form></td>
+            <td><button class="btn btn-danger deleteStaff">Delete</button></td> 
+              </tr>
+              <tr>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                 <td><button class="btn btn-primary edit">Update</button>
+                <form class="card hide">
+                  <label for="firstName">firstName</label>
+                  <input type="text" name="firstName" class="fname" />
+                  <label for="lastName">LastName</label>
+                  <input type="text" name="lastName" class="lname" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <button class="btn btn-primary" id="adminSubmit">Add</button>
+                </form></td>
+            <td><button class="btn btn-danger deleteStaff">Delete</button></td> 
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+
+
+</Section>
+
+
+
+
+
+
+
+
+
+
+      <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(187, 182, 246,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(170, 164, 244,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(154, 145, 242,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#837aef" />
+            </g>
+        </svg>
+    </div>
+    <footer class="page-footer font-small unique-color-dark pt-5">
+      <div class="container d-flex footer-container">
+        <div class="container d-flex justify-content-around">
+            <div class="">
+               <p style="color: black;">  Get in touch</p>
+               <span><img src="logos_google-gmail.svg" style="height: 15px; width: 15px;" alt=""> hospitalmail@gmail.com</span><br>
+               <span><img src="Group (1).svg" alt="" style="height: 15px; width: 15px;" > +91 9635245211</span><br>
+               <span><img src="Vector (1).svg" style="height: 15px; width: 15px;" alt=""> Address: Pune 33 </span><br>
+           </div>
+       </div>
+       <div class="container d-flex justify-content-around">
+           <div class="">
+              <p style="color: black;">  Navigation Link</p>
+              <a href="" style="color: black;">Admin</a><br>
+              <a href="" style="color: black;">Doctor</a><br>
+              <a href="" style="color: black;">Staff</a>
+          </div>
+      </div>
+      <div class="container d-flex justify-content-around">
+        <div class="">
+           <p style="color: black;">Follow Us </p>
+          <Span> <img src="ph_linkedin-logo-light.svg" alt="" style="height: 25px; width: 25px;"> <img src="foundation_social-twitter.svg" style="height: 25px; width: 25px;" alt=""> <img src="jam_facebook-square.svg" style="height: 25px; width: 25px;" alt=""></Span>
+       </div>
+   </div>
+      </div>
+    
+    <div class="footer-copyright text-center py-3" style="background-color: #7C71F4;"><h7>© 2020 Copyright:</h7>
+    </div>
+  </footer>
+      <script src="AdminDashboard.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
