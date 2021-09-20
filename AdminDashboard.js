@@ -204,7 +204,7 @@ function addEditListeners() {
         let td = tr.querySelectorAll("td");
         td[0].innerText = form.querySelector(".fname").value;
         td[1].innerText = form.querySelector(".lname").value;
-        td[2].innerText = form.querySelector(".email").value;
+        td[2].innerText = form.querySelector(".email").value;   
         form.classList.add("hide");
         btn.classList.remove("hide");
       });
